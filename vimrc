@@ -10,6 +10,10 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
+" SML and REPL
+Plugin 'preservim/vimux'
+Plugin 'jez/vim-better-sml'
+
 " Making Vim look good
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-airline/vim-airline'
