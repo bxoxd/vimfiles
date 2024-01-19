@@ -10,10 +10,6 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
-" SML and REPL
-Plugin 'preservim/vimux'
-Plugin 'jez/vim-better-sml'
-
 " Making Vim look good
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-airline/vim-airline'
@@ -38,29 +34,29 @@ Plugin 'Raimondi/delimitMate'
 
 " --- man pages, tmux ---
 Plugin 'jez/vim-superman'
-Plugin 'christoomey/vim-tmux-navigator'
+"Plugin 'christoomey/vim-tmux-navigator'
 
 " --- Syntax plugins ---
 Plugin 'jez/vim-c0'
 Plugin 'jez/vim-ispc'
 Plugin 'kchmck/vim-coffee-script'
 
-" --- Extras/Advanced plugins ---
-" Highlight and strip trailing whitespace
-"Plugin 'ntpeters/vim-better-whitespace'
-" Easily surround chunks of text
-"Plugin 'tpope/vim-surround'
-" Align CSV files at commas, align Markdown tables, and more
-"Plugin 'godlygeek/tabular'
-" Automaticall insert the closing HTML tag
-"Plugin 'HTML-AutoCloseTag'
-" Make tmux look like vim-airline (read README for extra instructions)
-"Plugin 'edkolev/tmuxline.vim'
-" All the other syntax plugins I use
-"Plugin 'ekalinin/Dockerfile.vim'
-"Plugin 'digitaltoad/vim-jade'
-"Plugin 'tpope/vim-liquid'
-"Plugin 'cakebaker/scss-syntax.vim'
+"" --- Extras/Advanced plugins ---
+"" Highlight and strip trailing whitespace
+""Plugin 'ntpeters/vim-better-whitespace'
+"" Easily surround chunks of text
+""Plugin 'tpope/vim-surround'
+"" Align CSV files at commas, align Markdown tables, and more
+""Plugin 'godlygeek/tabular'
+"" Automaticall insert the closing HTML tag
+""Plugin 'HTML-AutoCloseTag'
+"" Make tmux look like vim-airline (read README for extra instructions)
+""Plugin 'edkolev/tmuxline.vim'
+"" All the other syntax plugins I use
+""Plugin 'ekalinin/Dockerfile.vim'
+""Plugin 'digitaltoad/vim-jade'
+""Plugin 'tpope/vim-liquid'
+""Plugin 'cakebaker/scss-syntax.vim'
 
 call vundle#end()
 
@@ -72,15 +68,6 @@ filetype plugin indent on
 " We need this for plugins like Syntastic and vim-gitgutter which put
 " symbols in the sign column.
 hi clear SignColumn
-
-" --- altercation/vim-color-solarized settings ---
-" Toggle this to "light" for light colorscheme
-"set background=dark
-
-" Uncomment the next line if your terminal is not configured for solarized
-" let g:solarized_termcolors=256
-"colorscheme solarized
-
 
 " --- bling/vim-airline settings ---
 " Always show statusbar
@@ -154,7 +141,7 @@ augroup END
 
 
 " --- jez/vim-superman settings ---
-" better man page support
+"better man page support
 noremap K :SuperMan <cword><CR>
 
 
